@@ -1,0 +1,23 @@
+EXO JS :
+
+ 
+affiche 'Merci d'avoir choisi Vroum-Vroum !
+Choisissez votre carburant :
+Gazole, SuperSP ou GPL ?';
+
+//réaction quand il y a utilisateur
+Si réponse {
+  recueille carburant_choisi;
+  affiche 'vous avez choisi : nom du carburant';
+  affiche 'Entrez votre carte bleue';
+  tantque info carte bleue pas entrée{
+  affiche 'Entrez votre carte bleue';
+}
+Sinon si info carte bleue entrée {
+  affiche 'Entrez votre code';
+  tant que code pas entré ou pas bon{
+      affiche 'Entrez votre code';
+  }
+  Sinon si code bon{
+      affiche 'Vous pouvez vous servir en ';
+      affiche carburant_choisi;

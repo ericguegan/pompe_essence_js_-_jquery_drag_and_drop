@@ -1,0 +1,102 @@
+/* Je pose ma police de caractère sur toute ma page: */
+html {
+	font-family: Comic;
+}
+/* Je fixe la marge du body */
+body{
+margin:0px;
+background-color: lightgrey;
+}
+h1 {
+  text-align: center;
+  color: blue;
+}
+h2 {
+	text-align: center;
+	color: white;
+}
+/* Modification de la couleur de fond pour la page2*/
+.change_color{
+	background-color: #f8ead0;
+	background-image: url(../img/rain-nature.gif);
+	background-size: cover;
+
+
+}
+.pompe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Réglage de l'espace Drop*/
+.dropn {
+	width:343px;
+  height: 450px;
+	margin-left: 10px;
+  background-image: url(../img/Monnayeur.gif);
+}
+
+.coin {
+	width: 50px;
+	height: 50px;
+	-webkit-transition:-webkit-transform .9s; // Chrome Safari
+  -moz-transition:-moz-transform .9s;       // Mozilla
+  -o-transition:-o-transform .9s;           // Opéra
+  -ms-transition:-ms-transform .9s;         // IE
+  transition:transform .9s;
+}
+.coin:hover{
+  -webkit-transform:rotate(380deg);
+  -moz-transform:rotate(380deg);
+  -o-transform:rotate(380deg);
+  -ms-transform:rotate(380deg);
+  transform:rotate(380deg);
+}
+.coin_reste {
+	-webkit-transition:-webkit-transform .9s; // Chrome Safari
+  -moz-transition:-moz-transform .9s;       // Mozilla
+  -o-transition:-o-transform .9s;           // Opéra
+  -ms-transition:-ms-transform .9s;         // IE
+  transition:transform .9s;
+}
+.coin_reste:hover{
+  -webkit-transform:rotate(380deg);
+  -moz-transform:rotate(380deg);
+  -o-transform:rotate(380deg);
+  -ms-transform:rotate(380deg);
+  transform:rotate(380deg);
+}
+.end{
+width: 500px;
+height: 500px;
+margin-left: 5px;
+
+}
+.selection {
+
+  text-align: center;
+}
+
+#section1 {
+	display: block;
+	float: left;
+	width: auto;
+}
+
+#section2 {
+	display: block;
+	float:right;
+	background-color: orange;
+	height: 400px;
+	width: 400px;
+	border-radius: 20px;
+	text-align: center;
+}
+#footer {
+  position: absolute;
+	border-bottom: 0px;
+	height: 200px;
+	width: auto;
+	text-align: center;
+
+}

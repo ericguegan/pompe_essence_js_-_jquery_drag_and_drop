@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>VroumVroum</title>
+<meta charset="utf-8">
+<!-- Appel des fichiers externes -->
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<script type="text/javascript" src="./js/script.js"></script>
+
+</head>
+
+<body>
+<!--
+affiche 'Merci d'avoir choisi Vroum-Vroum !
+Choisissez votre carburant :
+Gazole, SuperSP ou GPL ?';
+
+//réaction quand il y a utilisateur
+Si réponse {
+ recueille carburant_choisi;
+ affiche 'vous avez choisi : nom du carburant';
+ affiche 'Entrez votre carte bleue';
+ tantque info carte bleue pas entrée{
+ affiche 'Entrez votre carte bleue';
+}
+Sinon si info carte bleue entrée {
+ affiche 'Entrez votre code';
+ tant que code pas entré ou pas bon{
+     affiche 'Entrez votre code';
+ }
+ Sinon si code bon{
+     affiche 'Vous pouvez vous servir en ';
+     affiche carburant_choisi;
+-->
+<h1>Merci d'avoir choisi Vroum-Vroum !</h1>
+<img class=pompe src="./img/une-pompe-a-essence.jpg">
+<div class="selection">
+<p class='choix'>Veuillez choisir votre carburant :</p>
+<label><input type="checkbox" name="Gazole" value="Gazole" />Gazole</label><br />
+<label><input type="checkbox" name="SuperSP" value="SuperSP" />SuperSP</label><br />
+<label><input type="checkbox" name="GPL" value="GPL" />GPL</label><br />
+<input type="submit" value="Veuiller confirmer votre choix" onclick="check();" />
+</div>
+
+</body>
+</html>
